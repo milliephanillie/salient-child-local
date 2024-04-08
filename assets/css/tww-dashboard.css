@@ -1,0 +1,427 @@
+/**
+CSS for template-dashboard.php
+*/
+
+html {
+    margin-top: 0 !important
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --white: #fff;
+    --bg-grey: #f6f6f6;
+    --brand-green: rgb(128, 183, 65);
+
+    --text-color: rgb(94, 94, 94);
+    --text-light: rgb(149,149,149);
+    --text-dark: rgb(76, 76, 76);
+
+    --fill-grey: rgb(104, 104, 104);
+    --fill-grey-light: rgb(149,149,149);
+
+    --border-color: #efefef;
+    --border-active: rgba(239,239,239,0.8);
+    --container-max-width: 1200px;
+
+    --bg-opacity: 1;
+
+    --text-small: 12px;
+    
+}
+
+/**
+Colors
+*/
+
+.bg-grey {
+    background-color: var(--bg-grey);
+}
+
+.text-light {
+    color: var(--text-light);
+}
+
+.fill-grey {
+    fill: var(--fill-grey);
+}
+
+.fill-grey-light {
+    fill: var(--fill-grey-light);
+}
+
+/**
+Font-sizes
+*/
+
+.text-sm {
+    font-size: var(--text-small);
+    line-height: normal;
+}
+
+/**
+Button
+*/
+
+button[type=submit].dash-button.btn-brand-green {
+    background-color: var(--brand-green);
+    color: var(--white);
+    border: none;
+    padding: 14px 21px;
+    font-size: 16px;
+    line-height: 21px;
+    cursor: pointer;
+}
+
+/**
+Grid
+*/
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container {
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: var(--container-max-width);
+}
+
+.full-width {
+    width: 100%;
+}
+
+.full-size {
+    width: 100%;
+    height: calc(100vh - 50px);
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-md-3 {
+    width: 25%;
+}
+
+.col-md-4 {
+    width: 33.3333333333%;
+}
+
+.col-md-6 {
+    width: 50%;
+}
+
+.col-md-9 {
+    width: 75%;
+}
+
+body.tww-dashboard {
+    background-color: rgba(246,246,246,var(--bg-opacity));
+}
+
+.shadow-theme {
+    background-color: var(--white);
+    box-shadow: 0 3px 8px 0 #efefef;
+}
+
+/**
+Header
+*/  
+
+.header--dashboard {
+    background-color: var(--white);
+    box-shadow: 0 3px 8px 0 #efefef;
+    padding: 21px 0px;
+}
+
+.header--dashboard .logo {
+    height: 48px;
+}
+
+header.header--dashboard {
+    height: 84px;
+}
+
+/*
+Ham close
+*/
+
+.sidebar-buddy .logo-wrapper {
+    display: none;
+}
+
+.sidebar-buddy--is-open .logo-wrapper {
+    display: block;
+}
+
+.dash-ham-menu {
+    display: block;
+    cursor: pointer;
+}
+
+.dash-ham-close {
+    display: none;
+    cursor: pointer;
+}
+
+.dash-ham-container--is-open .dash-ham-menu {
+    display: none;
+}
+
+.dash-ham-container--is-open .dash-ham-close {
+    display: block;
+}
+
+.dash-ham-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dash-ham-menu svg,
+.dash-ham-close svg {
+    width: 21px;
+    height: 21px;
+    fill: var(--fill-grey);
+}
+
+/**
+Sidebar
+*/ 
+
+.dashboard-sidebar {
+    background-color: var(--white);
+}
+
+.dashboard-sidebar--is-open,
+.sidebar-buddy--is-open {
+    width: 20%;
+}
+
+@media (max-width: 950px) {
+    .dashboard-sidebar--is-open,
+    .sidebar-buddy--is-open {
+        position: fixed;
+        width: 250px;
+        height: 100%;
+    }
+}
+
+.dashboard-sidebar--is-closed,
+.sidebar-buddy--is-closed {
+    width: 56px;
+}
+
+.dashboard-menu-list-group a svg {
+    width: 14px;
+    height: 14px;
+    margin-right: 10px;
+}
+
+.dashboard-sidebar--is-closed .nav-group-header {
+    display: none;
+}
+
+.dashboard-sidebar--is-closed .dashboard-menu-list-group a,
+.sidebar-buddy--is-closed .logo-container {
+    justify-content: center;
+}
+
+.dashboard-sidebar--is-closed .dashboard-menu-list-group a svg {
+    margin-right: 0;
+}
+
+.dashboard-sidebar--is-closed span.dash-setting-item {
+    display: none;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 48px;
+}
+
+.nav-group-header h3 {
+    display: flex;
+    font-size: 14px;
+    line-height: 21px;;
+    color: var(--text-light);
+    padding: 14px 20px 7px;
+    margin-bottom: 0;
+    border-bottom-color: rgb(239, 239, 239);
+    border-bottom-style: solid;
+    border-bottom-width: 0.8px
+}
+
+.nav-group-header svg {
+    width: 10px;
+    height: 10px;
+    margin-right: 7px;
+}
+
+.dashboard-menu-list-group a {
+    display: flex;
+    padding: 14px 20px;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid #f0f0f0;
+    border-top-width: 2px;
+    border-color: transparent;
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 21px;;
+}
+
+
+.dashboard-menu-list-group a:hover {
+    background-color: #f0f0f0;
+}
+
+.dashboard-menu-list-group a.is-open {
+    background-color: var(--bg-grey);
+    border-top: 2px solid rgb(239, 239, 239);
+}
+
+.dashboard-content {
+    width: 80%;
+    padding: 28px;
+}
+
+.dashboard-header-icon {
+    width: 14px;
+    height: 14px;
+    margin-right: 14px;
+}
+
+.dashboard-header-title {
+    margin-bottom: 35px;
+}
+
+.dashboard-header-title h1 {
+    font-size: 28px;
+    line-height: 35px;
+    margin-bottom: 0;
+}
+
+
+
+.dashboard-card {
+    padding: 21px 20px;
+    margin-bottom: 28px;
+}
+
+.dashboard-card--sm {
+    width: 68%;
+}
+
+@media (max-width: 950px) {
+    .dashboard-card--sm {
+        width: 100%;
+    }
+}
+
+/**
+Main
+*/
+
+main {
+    display: none;
+}
+
+main.active-content {
+    display: block;
+}
+
+/*
+Navs
+*/  
+
+.tab-nav > ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: flex-start;
+}
+
+.tab-nav > ul > li {
+    list-style: none;
+}
+
+.tab-nav > ul > li > a {
+    text-align: center;
+    padding: 7px 20px;
+    cursor: pointer;
+    display: block;;
+    color: var(--text-dark);
+    font-weight: bold;
+}
+
+.tab-nav > ul > li > a.is-active {
+    background-color: var(--bg-grey);
+}
+
+/**
+Form
+* CSS for form for updating user profile information. Wrapped in a form-group div. 
+*/
+
+.form-fields {
+    margin-bottom: 35px;
+}
+
+.form-group {
+    margin-bottom: 21px;
+    width: 22%;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group input[type="phone"],
+.form-group input[type="number"],
+.form-group button.upload-profile-picture {
+    border: .8px solid rgb(215, 215, 215);
+}
+
+.form-group button.upload-profile-picture {
+    width: 100%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    background-color: var(--bg-grey);
+}
+
+.form-group--span-2 {
+    width: 48%;
+}
+
+form.flex-form,
+.flex-form > .form-fields {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+form.flex-form label,
+form.flex-form label span,
+button.upload-profile-picture {
+    color: var(--text-dark);
+}
+
+form.flex-form label span.text-light {
+    color: var(--text-light);
+}

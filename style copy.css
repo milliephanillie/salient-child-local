@@ -1,0 +1,42 @@
+/*
+
+Theme Name: Salient Child Theme
+
+Description: This is a custom child theme for Salient
+
+Theme URI:   https://themeforest.net/item/salient-responsive-multipurpose-theme/4363266
+
+Author: ThemeNectar
+
+Author URI:  https://themeforest.net/user/themenectar
+
+Template: salient
+
+Version: 1.0
+
+*/
+
+
+
+
+:root {
+    --brand-green: #80b741;
+    --black: #000000;
+}
+
+.meta-tww-plus {
+    color: var(--brand-green);
+    font-weight: bold;
+    letter-spacing: -.25px;
+    font-style: italic;
+}
+
+.meta-tww-plus-sign {
+    color: var(--black);
+}
+
+
+
+
+
+

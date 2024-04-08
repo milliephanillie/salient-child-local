@@ -1,0 +1,25 @@
+body.tww-plus {}
+
+/* single */
+
+.inner-wrap--tww-plus {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    max-width: 800px;
+    margin: auto;
+    transform: none !important;
+}
+
+.inner-wrap--tww-plus .tww-plus-badge {
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.inner-wrap--tww-plus .tww-plus-badge img {
+    width: 75px !important;
+    margin-bottom: 0 !important;
+}

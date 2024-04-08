@@ -1,0 +1,139 @@
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --brand-green: #80b741;
+    --brand-grey: #e5e5e5;
+    --brand-grey-text: #666666;
+
+    --vertical_rythm: 7px;
+
+    --h3size: 21px;
+    --h3lh: 28px;
+    --psize: 16px;
+    --plh: 28px;
+    --plh-alt: 21px;
+    --psmall: 14px;
+    --plh-small: 21px;
+}
+
+
+header.letters.tww-fixed {
+    position: fixed;
+    top: 64px;
+    left: 0;
+    width: 100%;
+    transition: .3s all ease;
+}
+
+body.admin-bar header.letters.tww-fixed {
+    margin-top: 32px;
+}
+
+.vr-1 {
+    padding-top: var(--vertical_rythm);
+    padding-bottom: var(--vertical_rythm);
+}
+
+.h4-alt {
+    font-size: var(--psize);
+    line-height: var(--plh);
+    color: var(--brand-grey-text);
+    margin-bottom: var(--vertical_rythm);
+    text-transform: uppercase;
+    letter-spacing: .05px;
+}
+
+.tww-bg-brand-grey  {
+    background-color: var(--brand-grey);
+}
+
+header.letters {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+header.letters ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+header.letters ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header.letters ul li a {
+    text-decoration: none;
+    color: var(--brand-green);
+    font-size: var(--h3size);
+    line-height: var(--h3lh);
+}
+
+/* container */
+
+.tww-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+}
+
+/* glossary hero */
+
+.glossary-hero-content {
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.glossary-hero-intro {
+    padding-right: 20px;
+    width: 70%;
+}
+
+.glossary-hero-sidebar {
+    width: 30%;
+}
+
+.glossary-hero-sidebar ul {   
+    padding-left: 20px;
+    border-left: 1px solid var(--brand-grey);
+}
+
+.glossary-hero-sidebar ul li {
+    list-style: none;
+    padding: 0;
+    margin-bottom: calc(var(--vertical_rythm) * 1.5);
+    font-size: var(--psize);
+    line-height: var(--plh-alt);
+}
+
+/* glossary list */
+
+.letter-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: var(--vertical_rythm);
+}
+
+.letter-title span a {
+    font-size: var(--psmall);
+    line-height: var(--plh-small);
+    margin-left: 10px;
+    color: var(--brand-grey-text)
+}
+
+.letter-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+}
